@@ -1,0 +1,6 @@
+<div class="note-list">
+    <div *ngFor="let note of notes"  class="note">
+      <p class="note-content">{{ note.content }}</p>
+      <button (click)="deleteNote(note.id)" class="delete">Delete Note</button>
+    </div>
+</div>
